@@ -18,15 +18,15 @@
 
             <Header @scrollDown="scrollDown()"></Header>
 
-            <main class="mx-auto mt-10 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28">
+            <main class="mx-auto mt-10 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28 font-nunitoSans">
               <div class="sm:text-center lg:text-left">
                 <h1
-                  class="text-4xl font-bold tracking-tight text-gray-700 sm:text-5xl"
+                  class="text-4xl font-extrabold tracking-tight text-umaiBasicTitleText sm:text-5xl"
                 >
                   <span class="block xl:inline">Наши продукты</span>
                 </h1>
                 <p
-                  class="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0"
+                  class="mt-3 text-[20px] font-semibold text-subText sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0"
                 >
                   Продукция, полученная с переработанных растений, выращенных на
                   ферме.
@@ -36,7 +36,7 @@
                 >
                   <div class="rounded-md shadow">
                     <button
-                      class="flex w-full items-center justify-center rounded-md border border-transparent bg-green-600 px-6 py-3 text-base font-medium text-white hover:bg-green-700 md:py-2 md:px-8 md:text-lg"
+                      class="flex w-full items-center justify-center rounded-md border border-transparent bg-buttonGreen px-6 py-3 text-base font-medium text-white hover:bg-green-700 md:py-2 md:px-8 md:text-lg"
                       @click="scrollDown()"
                     >
                       Связаться
@@ -65,7 +65,7 @@
             <div class="w-full md:w-1/2 px-10 mb-10 md:mb-0">
               <div class="relative">
                 <img
-                  src="../assets/soap_product.png"
+                  src="../assets/soap_product.svg"
                   class="w-full relative z-10"
                   alt=""
                 />
@@ -76,10 +76,10 @@
             </div>
             <div class="w-full md:w-1/2 px-10">
               <div class="mb-10">
-                <h3 class="font-bold text-green-600 uppercase text-4xl mb-5">
+                <h3 class="font-extrabold text-redText font-nunitoSans uppercase text-3xl mb-5">
                   Органическое ручное мыло из пшеницы
                 </h3>
-                <p class="text-sm md:text-base text-gray-500">
+                <p class="text-sm md:text-base text-subText font-semibold font-nunitoSans">
                   Состав: Вода, глицерин, стеарат натрия, пропиленгликоль,
                   сорбитол, хлорид натрия, стеариновая кислота, лауриновая
                   кислота, диоксид титана, амброксид, ЭДТА. Основная информация:
@@ -91,7 +91,7 @@
               <div>
                 <div class="inline-block align-bottom mr-5">
                   <span
-                    class="font-medium text-gray-600 text-3xl leading-none align-baseline"
+                    class="font-bold text-umaiBasicTitleText text-3xl font-nunitoSans   leading-none align-baseline"
                     >2000 тг</span
                   >
                 </div>
@@ -112,14 +112,14 @@
             "
           >
             <div
-              class="absolute bg-gradient-to-b from-blue-400 to-green-600 opacity-75 inset-0 z-0"
+              class="absolute productBack opacity-80 inset-0 z-0"
             ></div>
-            <div class="w-full max-w-xl z-10">
-              <p class="text-2xl xl:text-4xl font-bold leading-tight mb-6">
+            <div class="w-full max-w-xl z-10 font-nunitoSans">
+              <p class="text-2xl xl:text-4xl font-black leading-tight mb-6">
                 Для того, чтобы осуществить заказ товаров, заполните пустые поля
                 формы.
               </p>
-              <p class="text-base xl:text-xl text-white font-normal">
+              <p class="text-base xl:text-xl text-white font-bold">
                 Мы работаем с 9:00-20:00, в будние дни. <br />Через некоторое
                 время после заполнения заявки, наши сотрудники свяжутся с вами.
               </p>
@@ -201,7 +201,7 @@
                   <button
                     type="submit"
                     @click="submit"
-                    class="w-full flex justify-center bg-green-500 hover:bg-green-400 text-white p-4 rounded-full font-semibold shadow-lg cursor-pointer transition duration-300 ease-in-out"
+                    class="w-full flex justify-center bg-buttonGreen hover:bg-green-400 text-white p-4 rounded-full font-semibold shadow-lg cursor-pointer transition duration-300 ease-in-out"
                   >
                     Отправить
                   </button>
@@ -266,6 +266,10 @@ export default {
 };
 </script>
 <style scoped>
+
+.productBack{
+  background: linear-gradient(180deg, rgba(92, 164, 169, 0.48) 2.65%, rgba(51, 103, 59, 0.72) 79.27%), url(<path-to-image>), lightgray -64.468px -4.658px / 122.32% 101.558% no-repeat;
+}
 .circles {
   position: absolute;
   top: 0;

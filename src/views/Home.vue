@@ -13,7 +13,7 @@
               preserveAspectRatio="none"
               aria-hidden="true"
             >
-              <polygon points="50,0 100,0 50,100 0,100" />
+              <polygon points="50,0 100,0 50,100 0,400" />
             </svg>
 
             <Header @scrollDown="scrollDown()"></Header>
@@ -21,26 +21,26 @@
             <main class="mx-auto mt-10 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28">
               <div class="sm:text-center lg:text-left">
                 <h1
-                  class="text-4xl font-bold tracking-tight text-gray-700 sm:text-5xl"
+                  class="text-5xl font-bold tracking-tight text-gray-700 sm:text-5xl"
                 >
-                  <span class="text-green-600 xl:inline">UMAI</span>
-                  <span class="xl:inline">
+                  <span class="font-nunito font-black italic xl:inline"><mark class="bg-heroMark text-redText px-1">UMAI</mark></span>
+                  <span class="font-nunitoSans font-extrabold xl:inline">
                     - Тенгрианская богиня земли и плодородия
                   </span>
                 </h1>
                 <p
-                  class="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0"
+                  class="mt-3 text-subText text-xl font-semibold font-nunitoSans sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0"
                 >
-                  Проект, нацеленный на развитии агропромышленности в
-                  Казахстане, основанный на внедрении модульной гидропонной
-                  фермы.
+                  Проект, нацеленный на <span class="text-redText">развитии агропромышленности</span> в
+                  Казахстане, основанный на внедрении <span class="text-redText">модульной гидропонной
+                  фермы.</span>
                 </p>
                 <div
                   class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
                 >
                   <div class="rounded-md shadow">
                     <button
-                      class="flex w-full items-center justify-center rounded-md border border-transparent bg-green-600 px-6 py-3 text-base font-medium text-white hover:bg-green-700 md:py-2 md:px-8 md:text-lg"
+                      class="flex w-full items-center justify-center rounded-md border border-transparent bg-buttonGreen px-6 py-3 text-base font-medium text-white hover:bg-green-700 md:py-2 md:px-8 md:text-lg"
                       @click="scrollDown()"
                     >
                       Связаться
@@ -51,7 +51,7 @@
             </main>
           </div>
         </div>
-        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 py-2 lg:py-0">
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 py-2 lg:py-0 ">
           <img
             class="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
             src="../assets/pexels-johannes-plenio-1500523.jpg"
@@ -65,12 +65,73 @@
           <div
             class="mx-auto grid gap-6 md:w-3/4 lg:w-full lg:grid-cols-3 xl:w-11/12 xl:gap-8"
           >
-            <UmaiBasic
-              v-for="umaiBasic in umaiBasics"
-              :key="umaiBasic.id"
-              :umaiBasic="umaiBasic"
-            >
-            </UmaiBasic>
+
+          <!-- umaiBasic Component -->
+          <div class="font-nunitoSans bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8 transform transition-all hover:scale-105 hover:shadow-2xl xl:w-800">
+              <div class="pb-12 space-y-4">
+                <h3 class="text-2xl font-extrabold lg:text-2xl font-medium text-umaiBasicTitleText">
+                  Модернизация
+                </h3>
+                <p
+                  class="font-nunitoSans font-semibold text-subText mb-6 md:text-base"
+                >
+                  Мы разрабатываем и модернизируем новые технологии под нужды рабочего сельского населения. Таким образом, мы хотим <strong class=" font-bold text-umaiBasicTitleText">автоматизировать</strong> все процессы производства сырья и продуктов Агропромышленного комплекса. Наши инженеры следят за качеством, уровнем и актуальностью технологий на <strong class="font-bold text-umaiBasicTitleText">прототипе гидропонной фермы.</strong>
+                </p>
+              </div>
+              <img
+                src="../assets/umaiBasicPlant.svg"
+                class="mx-auto lg:h-48 lg:w-48 w-36"
+                alt="illustration"
+                loading="lazy"
+                width="900"
+                height="600"
+                
+              />
+            </div>
+
+
+            <div class="font-nunitoSans bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8 transform transition-all hover:scale-105 hover:shadow-2xl xl:w-800">
+              <div class="pb-12 space-y-4">
+                <h3 class="text-2xl font-extrabold lg:text-2xl font-medium text-umaiBasicTitleText">
+                  Тестирование
+                </h3>
+                <p
+                  class="font-nunitoSans font-semibold text-subText mb-6 md:text-base"
+                >
+                Исследуя <strong class="text-umaiBasicTitleText font-bold">альтернативный вид</strong> выращивания растений, мы создали универсальные химические удобрения и методы выращивания. Все исследованные объекты и процессы мы тестируем на прототипе гидропонной фермы. Для отслеживания инноваций в области агрономии у нас ведётся <strong class="text-umaiBasicTitleText font-bold">непрерывный трекинг</strong> (исследования) интернет-ресурсов.
+                </p>
+              </div>
+              <img
+                src="../assets/umaiBasicChemistry.svg"
+                class="mx-auto lg:h-48 lg:w-48 w-36"
+                alt="illustration"
+                loading="lazy"
+                width="900"
+                height="600"
+              />
+            </div>
+
+
+            <div class="font-nunitoSans bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8 transform transition-all hover:scale-105 hover:shadow-2xl xl:w-800">
+              <div class="pb-12 space-y-4">
+                <h3 class="text-2xl font-extrabold lg:text-2xl font-medium text-umaiBasicTitleText">
+                  Переработка и производство
+                </h3>
+                <p
+                  class="font-nunitoSans font-semibold text-subText mb-6 md:text-base"
+                >
+                На Гидропонной ферме мы выращиваем зелень и траву, для дальнейшей её <strong class="text-umaiBasicTitleText font-bold">переработки и продажи</strong>. Чаще всего мы выращиваем микрозелень, специи и пшеничную траву. Из последнего растения созданы уникальные продукты, а именно Пшеничный сок и органическое мыло. В производство был внесён вклад всего коллектива.
+                </p>
+              </div>
+              <img
+                src="../assets/umaiBasicSoap.svg"
+                class="mx-auto lg:h-48 lg:w-48 w-36"
+                alt="illustration"
+                loading="lazy"
+                width="900"
+                height="600"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -78,7 +139,7 @@
       <div class="py-16">
         <div class="container m-auto px-6 md:px-12 xl:px-0">
           <h2
-            class="text-center text-gray-600 font-robotoFlex font-semibold text-2xl md:text-5xl mb-14"
+            class="text-center text-umaiBasicTitleText font-nunitoSans font-extrabold text-2xl md:text-5xl mb-14"
           >
             Наши преимущества
           </h2>
@@ -111,8 +172,9 @@
 </template>
 <script>
 import Header from '../components/Header.vue';
-import UmaiBasic from '../components/UmaiBasic.vue';
 import UmaiAdvantage from '../components/UmaiAdvantage.vue';
+// import UmaiBasic from '../components/UmaiBasic.vue';
+
 export default {
   data() {
     return {
@@ -122,26 +184,26 @@ export default {
         '3. Поднятия эффективности труда в аграрной отрасли за счет автоматизации процессов;',
         '4. Внедрения технологии модульной гидропонной фермы в сельскохозяйственную отрасль.',
       ],
-      umaiBasics: [
-        {
-          id: 0,
-          title: 'Модернизация',
-          text: 'Мы разрабатываем и модернизируем новые технологии под нужды рабочего сельского населения. Таким образом, мы хотим автоматизировать все процессы производства сырья и продуктов Агропромышленного комплекса. Наши инженеры следят за качеством, уровнем и актуальностью технологий на прототипе гидропонной фермы.',
-          img: 'hydroponics.png',
-        },
-        {
-          id: 1,
-          title: 'Тестирование',
-          text: 'Исследуя альтернативный вид выращивания растений, мы создали универсальные химические удобрения и методы выращивания. Все исследованные объекты и процессы мы тестируем на прототипе гидропонной фермы. Для отслеживания инноваций в области агрономии у нас ведётся непрерывный трекинг (исследования) интернет-ресурсов.',
-          img: 'testing.png',
-        },
-        {
-          id: 2,
-          title: 'Переработка и производство',
-          text: 'На Гидропонной ферме мы выращиваем зелень и траву, для дальнейшей её переработки и продажи. Чаще всего мы выращиваем микрозелень, специи и пшеничную траву. Из последнего растения созданы уникальные продукты, а именно Пшеничный сок и органическое мыло. В производство был внесён вклад всего коллектива.',
-          img: 'soap.png',
-        },
-      ],
+      // umaiBasics: [
+      //   {
+      //     id: 0,
+      //     title: 'Модернизация',
+      //     text: 'Мы разрабатываем и модернизируем новые технологии под нужды рабочего сельского населения. Таким образом, мы хотим автоматизировать все процессы производства сырья и продуктов Агропромышленного комплекса. Наши инженеры следят за качеством, уровнем и актуальностью технологий на прототипе гидропонной фермы.',
+      //     img: 'hydroponics.png',
+      //   },
+      //   {
+      //     id: 1,
+      //     title: 'Тестирование',
+      //     text: 'Исследуя альтернативный вид выращивания растений, мы создали универсальные химические удобрения и методы выращивания. Все исследованные объекты и процессы мы тестируем на прототипе гидропонной фермы. Для отслеживания инноваций в области агрономии у нас ведётся непрерывный трекинг (исследования) интернет-ресурсов.',
+      //     img: 'testing.png',
+      //   },
+      //   {
+      //     id: 2,
+      //     title: 'Переработка и производство',
+      //     text: 'На Гидропонной ферме мы выращиваем зелень и траву, для дальнейшей её переработки и продажи. Чаще всего мы выращиваем микрозелень, специи и пшеничную траву. Из последнего растения созданы уникальные продукты, а именно Пшеничный сок и органическое мыло. В производство был внесён вклад всего коллектива.',
+      //     img: 'soap.png',
+      //   },
+      // ],
       umaiAdvantages: [
         {
           id: 0,
@@ -218,7 +280,7 @@ export default {
       }
     },
   },
-  components: { Header, UmaiBasic, UmaiAdvantage },
+  components: { Header, UmaiAdvantage }, //umaiBasic добавить
   metaInfo: {
     title: 'Главная',
   },
@@ -226,7 +288,7 @@ export default {
 </script>
 <style lang="css" scoped>
 #nature-png {
-  background-image: linear-gradient(#00b16a, #c2f970);
+  background-image: linear-gradient(180deg, rgba(158, 206, 106, 0.90) 0%, rgba(92, 164, 169, 0.90) 77.36%);
 
   height: 100%;
   /* Center and scale the image nicely */

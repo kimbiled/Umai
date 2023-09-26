@@ -17,15 +17,15 @@
 
           <Header @scrollDown="scrollDown()"></Header>
 
-          <main class="mx-auto mt-10 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28">
+          <main class="mx-auto mt-10 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28 font-nunitoSans">
             <div class="sm:text-center lg:text-left">
               <h1
-                class="text-4xl font-bold tracking-tight text-gray-700 sm:text-5xl"
+                class="text-4xl font-extrabold tracking-tight text-umaiBasicTitleText uppercase sm:text-5xl"
               >
                 <span class="block xl:inline">О нас</span>
               </h1>
               <p
-                class="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0"
+                class="mt-3 text-[20px] font-semibold text-subText sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0"
               >
                 Нашей миссией является повышение эффективности
                 сельскохозяйственной отрасли РК путем внедрения новых
@@ -36,7 +36,7 @@
               >
                 <div class="rounded-md shadow">
                   <button
-                    class="flex w-full items-center justify-center rounded-md border border-transparent bg-green-600 px-6 py-3 text-base font-medium text-white hover:bg-green-700 md:py-2 md:px-8 md:text-lg"
+                    class="flex w-full items-center justify-center rounded-md border border-transparent bg-buttonGreen px-6 py-3 text-base font-medium text-white hover:bg-green-700 md:py-2 md:px-8 md:text-lg"
                     @click="scrollDown()"
                   >
                     Связаться
@@ -50,31 +50,31 @@
       <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <img
           class="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-          src="../assets/umaiTeam2.jpg"
+          src="../assets/umaiTeam3.png"
           alt=""
         />
       </div>
     </div>
     <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
-        <div class="relative flex items-center bg-green-100">
+        <div class="relative flex items-center gradient">
           <span
             class="hidden lg:absolute lg:inset-y-0 lg:-right-16 lg:block lg:w-16 lg:bg-green-100"
           ></span>
 
-          <div class="p-8 sm:p-16 lg:p-24">
-            <h3 class="text-2xl text-green-800 font-bold lg:text-4xl">
+          <div class="p-8 sm:p-16 lg:p-24 font-nunitoSans">
+            <h3 class="text-4xl text-umaiBasicTitleText font-extrabold lg:text-4xl">
               Проект UMAI
             </h3>
 
-            <p class="mt-4 text-green-700 text-sm md:text-base">
+            <p class="mt-4 text-umaiBasicTitleText md:text-base font-semibold">
               Всем давно известно, что проблема Глобального потепления и
               дефицита воды являются одними из первостепенных в современном
               мире. Климатические изменения истощили источники воды, что привело
               к засухе в странах Азии, Европы и Африки. Это также коснулось
               Агропромышленный комплекс.
             </p>
-            <p class="mt-4 text-green-700 text-sm md:text-base">
+            <p class="mt-4 text-umaiBasicTitleText md:text-base font-semibold">
               Свой вклад в поиск решения проблем АПК и облегчения работы
               сельского хозяйства решили внести и ученики НИШ ФМН г. Нур-Султан
               и других школ. Используя получаемые знания, мы самостоятельно
@@ -94,8 +94,8 @@
       </div>
     </div>
 
-    <div class="items-center lg:h-96 sm:h-auto w-full">
-      <h2 class="text-3xl text-center font-bold text-gray-600">
+    <div class="items-center lg:h-96 sm:h-auto w-full font-nunitoSans">
+      <h2 class="text-3xl text-center font-extrabold text-umaiBasicTitleText">
         Путь нашей команды
       </h2>
       <ol class="justify-center md:px-10 mt-10 items-start lg:flex px-0">
@@ -110,10 +110,10 @@
     <div
       class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
     >
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 font-nunitoSans">
         <div class="text-center">
           <div
-            class="flex items-center justify-center lg:w-16 lg:h-16 h-14 w-14 mx-auto mb-3 rounded-full bg-green-200 sm:w-12 sm:h-12"
+            class="flex items-center justify-center lg:w-16 lg:h-16 h-14 w-14 mx-auto mb-3 rounded-full bg-yellow sm:w-12 sm:h-12"
           >
             <img
               src="../assets/icon_members.svg"
@@ -121,16 +121,16 @@
               class="lg:w-10 lg:h-10 md:h-8 h-10 w-10 sm:w-9 sm:h-9"
             />
           </div>
-          <h6 class="text-4xl font-bold text-green-500">32</h6>
-          <p class="mb-2 font-bold text-md text-gray-700">Участника</p>
-          <p class="text-gray-700">
+          <h6 class="text-4xl font-bold text-lightGreen">16</h6>
+          <p class="mb-2 font-bold text-umaiBasicTitleText">Участника</p>
+          <p class="text-subText">
             Нынешний этап развития Umai - это лишь только начало пути, и команда
             намерена двигаться дальше.
           </p>
         </div>
         <div class="text-center">
           <div
-            class="flex items-center justify-center mx-auto mb-3 lg:w-16 lg:h-16 h-14 w-14 rounded-full bg-green-200 sm:w-12 sm:h-12"
+            class="flex items-center justify-center mx-auto mb-3 lg:w-16 lg:h-16 h-14 w-14 rounded-full bg-yellow sm:w-12 sm:h-12"
           >
             <img
               src="../assets/icon_money.svg"
@@ -138,16 +138,16 @@
               class="lg:w-11 lg:h-11 md:h-8 h-10 w-10 sm:w-9 sm:h-9"
             />
           </div>
-          <h6 class="text-4xl font-bold text-green-500">2млн</h6>
-          <p class="mb-2 font-bold text-md text-gray-700">Инвестиции</p>
-          <p class="text-gray-700">
+          <h6 class="text-4xl font-bold text-lightGreen">5,5млн</h6>
+          <p class="mb-2 font-bold text-umaiBasicTitleText">Инвестиции</p>
+          <p class="text-subText">
             Сначала проекта были выиграны стартап-конкурсы и получены инвестиции
             в крупных размерах.
           </p>
         </div>
         <div class="text-center">
           <div
-            class="flex items-center justify-center lg:w-16 lg:h-16 mx-auto mb-3 rounded-full bg-green-200 sm:w-12 sm:h-12 h-14 w-14"
+            class="flex items-center justify-center lg:w-16 lg:h-16 mx-auto mb-3 rounded-full bg-yellow sm:w-12 sm:h-12 h-14 w-14"
           >
             <img
               src="../assets/icon_products.svg"
@@ -155,16 +155,16 @@
               class="lg:w-10 lg:h-10 md:h-8 h-9 w-9 sm:w-8 sm:h-8"
             />
           </div>
-          <h6 class="text-4xl font-bold text-green-500">2</h6>
-          <p class="mb-2 font-bold text-md text-gray-700">Продукта</p>
-          <p class="text-gray-700">
+          <h6 class="text-4xl font-bold text-lightGreen">2</h6>
+          <p class="mb-2 font-bold text-umaiBasicTitleText">Продукта</p>
+          <p class="text-subText">
             Созданы коммерческие продукты после исследовательских работ и
             экспериментов
           </p>
         </div>
         <div class="text-center">
           <div
-            class="flex items-center justify-center lg:w-16 lg:h-16 mx-auto mb-3 rounded-full bg-green-200 sm:w-12 sm:h-12 h-14 w-14"
+            class="flex items-center justify-center lg:w-16 lg:h-16 mx-auto mb-3 rounded-full bg-yellow  sm:w-12 sm:h-12 h-14 w-14"
           >
             <img
               src="../assets/icon_directions.svg"
@@ -172,9 +172,9 @@
               class="lg:w-12 lg:h-12 md:h-8 h-10 w-10 sm:w-9 sm:h-9"
             />
           </div>
-          <h6 class="text-4xl font-bold text-green-500">5</h6>
-          <p class="mb-2 font-bold text-md text-gray-700">Подразделений</p>
-          <p class="text-gray-700">
+          <h6 class="text-4xl font-bold text-lightGreen">6</h6>
+          <p class="mb-2 font-bold text-umaiBasicTitleText">Подразделений</p>
+          <p class="text-subText">
             Команда поделена на разные отделы для улучшение эффективности
             выполнение задании.
           </p>
@@ -299,4 +299,11 @@ export default {
   },
 };
 </script>
-<style></style>
+<style>
+.gradient{
+  opacity: 0.85;
+background: linear-gradient(180deg, rgba(165, 211, 103, 0.80) 0%, rgba(92, 164, 169, 0.67) 100%);
+backdrop-filter: blur(23px);
+
+}
+</style>

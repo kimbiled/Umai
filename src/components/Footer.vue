@@ -2,12 +2,12 @@
   <div>
     <footer>
       <h2
-        class="text-center text-gray-600 mt-2 md:mt-20 font-robotoFlex font-semibold text-2xl md:text-5xl mb-14"
+        class="text-center text-umaiBasicTitleText font-nunitoSans font-extrabold mt-2 md:mt-20 text-2xl md:text-5xl mb-14"
       >
         Наши контакты:
       </h2>
       <section
-        class="text-gray-600 bg-white body-font relative font-robotoFlex"
+        class="text-umaiBasicTitleText  bg-white body-font relative font-nunitoSans"
       >
         <div class="container px-5 mx-auto flex sm:flex-nowrap flex-wrap">
           <div
@@ -116,7 +116,7 @@
               ></textarea>
             </div>
             <button
-              class="w-full flex justify-center bg-green-500 hover:bg-green-400 text-white p-4 rounded-lg font-semibold shadow-lg cursor-pointer transition duration-300 ease-in-out"
+              class="w-full flex justify-center bg-buttonGreen hover:bg-green-400 text-white p-4 rounded-lg font-semibold shadow-lg cursor-pointer transition duration-300 ease-in-out"
             >
               Отправить
             </button>
@@ -153,7 +153,7 @@
             >
               <img
                 class="w-7 h-7"
-                src="../assets/facebook.png"
+                src="../assets/facebook.svg"
                 alt="facebook"
               />
             </a>
@@ -164,21 +164,21 @@
             >
               <img
                 class="w-7 h-7"
-                src="../assets/instagram.png"
+                src="../assets/instagram.svg"
                 alt="instagram"
               />
             </a>
             <a class="ml-3 text-gray-500" href="https://t.me/UmaiStoreBot">
               <img
                 class="w-7 h-7"
-                src="../assets/telegram.png"
+                src="../assets/telegram.svg"
                 alt="telegram"
               />
             </a>
             <a class="ml-3 text-gray-500" href="https://wa.me/77057423304">
               <img
                 class="w-7 h-7"
-                src="../assets/whatsapp.png"
+                src="../assets/whatsapp.svg"
                 alt="whatsapp"
               />
             </a>

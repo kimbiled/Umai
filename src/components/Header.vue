@@ -46,7 +46,7 @@
       <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
       <ul
         :class="showMenu ? 'flex ' : 'hidden '"
-        class="flex-col px-2 md:px-0 space-y-4 border-b-2 pb-4 md:flex md:space-x-10 lg:space-x-5 md:flex-row md:items-center md:mt-0 md:border-b-0"
+        class="font-nunitoSans flex-col px-2 md:px-0 space-y-4 border-b-2 pb-4 md:flex md:space-x-10 lg:space-x-5 md:flex-row md:items-center md:mt-0 md:border-b-0"
       >
         <router-link to="/" class="md:flex hidden"
           ><img src="../assets/logo.png" class="h-12" alt="logo" />
